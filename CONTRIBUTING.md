@@ -100,9 +100,10 @@ Wanna dig into the source code of ScrollMagic or even contribute? Awesome!
 In order to compile ScrollMagic, you'll need [Node](http://nodejs.org/) and [Gulp](http://gulpjs.com/).
 
 If you don't already have them installed, here's how to get them:  
-First, download and install [Node](http://nodejs.org/download/).  
-Now use the <b>n</b>ode <b>p</b>ackage <b>m</b>anager, that comes installed with Node.  
-To install gulp globally open your console (i.e.MacOS X Terminal) and type: `npm install gulp -g`
+1. Download and install [Node](http://nodejs.org/download/).  
+ Now you can use the <b>n</b>ode <b>p</b>ackage <b>m</b>anager, that comes installed with Node.  
+2. Use it to install the Gulp CLI globally!  
+ In your console (i.e.MacOS X Terminal) type: `npm install gulp-cli -g`
 
 That's it! Now you're set to start developing!
 
@@ -115,18 +116,6 @@ $ npm install
 ```
 
 Sit back and watch the magic happen – once it's done, so are you. Now you're ready to start building and testing.
-
-### Directory Structure
-Here's how the ScrollMagic source files are organized:
-
-* `/dev` base folder for ScrollMagic development
-  * `/dev/build` contains files relevant to the build, like configuration files or the masthead
-  * `/dev/docs` contains configuration and template files for the docs generation
-  * `/dev/src` all the ScrollMagic source files, including plugins
-  * `/dev/tests` unit testing environment
-    * `/dev/tests/fixtures` html files for usage in tests
-    * `/dev/tests/karma` additional js files needed for the tests
-    * `/dev/tests/spec` contains all the spec files written in [jasmine](http://jasmine.github.io)
 
 ### Build ScrollMagic
 For clarity reasons the ScrollMagic source files are split up and can be found in `/dev/src`.
@@ -153,6 +142,10 @@ example: gulp -o=tmp
 -d=[DIR]     | alias: --doc=[DIR]
 Flag to also update the docs. If no directory is provided the default output directory '/docs' will be used.
 example: gulp -d
+
+--debug
+Enter debug mode: This will allow for 'debugger' statements to pass the source-check during compilation
+example: gulp --debug
 
 -h           | alias: -?
 display available command line options
@@ -202,6 +195,18 @@ When you've added a new feature to ScrollMagic please be sure to write a new tes
 
 Please __do not__ include dist files in your pull request (everything in `/scrollmagic`).
 They will only be included with a new release and an updated version number.
+
+### Directory Structure
+Here's how the ScrollMagic source files are organized:
+
+* `/dev` base folder for ScrollMagic development
+  * `/dev/build` contains files relevant to the build, like configuration files or the masthead
+  * `/dev/docs` contains configuration and template files for the docs generation
+  * `/dev/src` all the ScrollMagic source files, including plugins
+  * `/dev/tests` unit testing environment
+    * `/dev/tests/fixtures` html files for usage in tests
+    * `/dev/tests/karma` additional js files needed for the tests
+    * `/dev/tests/spec` contains all the spec files written in [jasmine](http://jasmine.github.io)
 
 ---
 

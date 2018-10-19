@@ -7,9 +7,9 @@ The goal is to make it stable and put enough security checks in to open it up mo
 
 Here's the rough milestone outline:
 
-1. Release new version including previously finished fixes.
-2. Update all dependencies.
-3. Fix compilation errors (travis + unit tests).
+1. ~~Release new version including previously finished fixes.~~
+2. ~~Update all development dependencies.~~
+3. ~~Fix compilation errors (travis + unit tests).~~
 4. Update Website (Examples + other outdated info)
 5. Build / Finalize proper Unit Tests (with support from [joewanko](https://github.com/joewanko)).
 6. Screen all pull requests and merge if approved and pass all tests.
@@ -144,7 +144,7 @@ var controller = new ScrollMagic.Controller();
 // create a scene
 new ScrollMagic.Scene({
 		duration: 100,	// the scene should last for a scroll distance of 100px
-		offset: 50		// start this scene after scrolling for 50px
+		offset: 50	// start this scene after scrolling for 50px
 	})
 	.setPin("#my-sticky-element") // pins the element for the the scene's duration
 	.addTo(controller); // assign the scene to the controller
